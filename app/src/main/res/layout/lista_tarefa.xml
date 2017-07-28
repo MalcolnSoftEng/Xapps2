@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pedidoCabec"
+        android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="tipo"
+                  android:layout_weight="6"
+                  android:textSize="16sp"
+                  android:id="@+id/textView2"/>
+        <Button
+            android:text="/"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/fund_editar"
+            android:onClick="btnEditar"
+            android:id="@+id/btnEdicao"
+            android:elevation="6dp"
+            android:stateListAnimator="@null"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="12dp"
+            />
+        <Button
+            android:text="-"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/fundo"
+            android:onClick="btnExcluir"
+            android:id="@+id/btnExclusao"
+            android:elevation="6dp"
+            android:stateListAnimator="@null"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="12dp"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+            android:text="Data Tarefa: "
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:text="Data Tarefa"
+                android:id="@+id/dataTarefa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Observações:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/textView4"/>
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/txtObservacao"/>
+        </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
